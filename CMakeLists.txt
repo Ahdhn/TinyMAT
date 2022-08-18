@@ -7,8 +7,10 @@ project(libTinyMAT LANGUAGES CXX VERSION 2.1.0.0)
 # set search path for CMake files
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
-find_package(Qt5 COMPONENTS Core REQUIRED)
-find_package(OpenCV)
+#find_package(Qt5 COMPONENTS Core REQUIRED)
+#find_package(OpenCV)
+option(TinyMAT_QT5_SUPPORT "" OFF)
+option(TinyMAT_OPENCV_SUPPORT "" OFF)
 
 ######################################################################################################
 # ensure a build-type is set (Release is default)
